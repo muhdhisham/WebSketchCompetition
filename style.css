@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: #eeeeee;
+  }
+  
+  main{
+    width: 65%;
+    min-width: 250px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  form{
+    width: 100%;
+    height: auto;
+  }
+  
+  .form-section{
+    padding: 30px 15px 30px 15px;
+    background-color: #feada6 ;
+    /* background: linear-gradient( #da4453 , #89216B); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 10px 10px rgba(0,0,0,0.23);
+    margin-bottom: 30px;
+  }
+  
+  h2{
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    border-bottom: 2px dotted black;
+  }
+  
+  .form-item{
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: auto;
+    margin: 40px;
+  }
+  
+  .form-item:first-child{
+    margin-top: 0px;
+  }
+  
+  .label{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    text-align: Left;
+    padding-right: 5px;
+  }
+  
+  #name-label, #email-label, #number-label{
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .entry{
+    flex: 1;
+    text-align: left;
+    padding-left: 5px;
+  }
+  
+  input[type=text], input[type=email], 
+  input[type=number], #dropdown, textarea, #joining-date{
+    border: none;
+    border: 2px solid rgba(49, 31, 31, 0.3);
+    /* border-top: 2px solid black; */
+    height: 40px;
+    width: 220px;
+    /* background-color: rgb(255, 163, 102); */
+    /* background: linear-gradient( #da4453 , #89216B); */
+    background-color: #feada6 ;
+    border-radius: 0;
+    padding-left: 10px;
+
+
+  }
+
+  input[type=text]:focus, input[type=email]:focus, 
+  input[type=number]:focus, #dropdown:focus, textarea:focus, #joining-date:focus{
+    outline-width: 0;
+    border-radius: 20px;
+    background-color: black;
+    color: wheat;
+    transition: all 0.4s;
+  }
+  input[type=text], input[type=email], 
+  input[type=number], #dropdown, textarea, #joining-date:required {
+    box-shadow:none;
+}
+  .entry label{
+    display: block;
+    margin-top: 2px;
+  }
+  
+  #submit{
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    background: #ffe6e6;
+    color: black;
+    border: 2px solid black;
+  }
+  
+  #submit:hover{
+    background: rgb(255, 163, 102);
+    color: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+    cursor: pointer;
+    border: none;
+  }
+  
+  footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  @media (max-width: 1080px){
+    main{
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px){
+    main{
+      width: 100%;
+      font-size: 14px;
+    }
+    
+    .label{
+      flex: 1;
+    }
+    
+    .entry{
+      flex: 2;
+    }
+    
+  }
+  
+  @media (max-width: 480px){
+    .form-item{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 100%;
+      margin-left: 0;
+    }
+    
+    .label{
+      
+    }
+    
+    .entry{
+      width: 100%;
+      padding: 0;
+      margin-top: 5px;
+    }
+    
+    input[type=text], input[type=email], 
+    input[type=number], #dropdown, textarea, #joining-date{
+      width: 90%;
+    }
+    
+  }
+
+
+
+
+
+
+
+
