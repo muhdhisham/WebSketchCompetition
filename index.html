@@ -4,37 +4,38 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="s.css">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet"> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: aqua;">
     <main id="main">
-        <h1 id="title">Survey Form</h1>
-        <p id="description">Employee Performance Review (Office)</p>
+        <h1 style="margin-top: 20px;" id="title">Carriers</h1>
+        <p id="description">Oppurtunity awaits you here... </p>
         <form id="survey-form">
           <div class="form-section" id="General-info">
             <h2>General Information</h2>
             <div class="form-item">
               <div class="label">
-                <label id="name-label" for="name">Name:</label>
+                <label id="name-label" for="name">Name:&nbsp;&nbsp;&nbsp;</label>
               </div>
               <div class="entry">
-                <input autofocus type="text" id="name" class="entry-field" name="name" placeholder="Enter your name" required>
+                <input type="text" id="name" class="entry-field" name="name" placeholder="Enter your name" required>
               </div>
             </div>
             <div class="form-item">
               <div class="label">
-                <label id="designation-label" for="designation">Designation:</label>
+                <label id="designation-label" for="designation">Designation:&nbsp;&nbsp;&nbsp;</label>
               </div>
               <div class="entry">
-                <input autofocus type="text" id="designation" class="entry-field" name="designation" placeholder="Enter Your Position" required>
+                <input type="text" id="designation" class="entry-field" name="designation" placeholder="Enter Your Position" required>
               </div>
             </div>
             <div class="form-item">
               <div class="label">
-                <label for="department">Department:</label>
+                <label for="department">Department:&nbsp;&nbsp;&nbsp;</label>
               </div>
               <div class="entry">
                 <select id="dropdown" name="department">
@@ -50,62 +51,21 @@
             </div>
             <div class="form-item">
               <div class="label">
-                <label id="epnumber-label" for="employee-number">Employee Number:</label>
+                <label id="epnumber-label" for="employee-number">Employee Number:&nbsp;&nbsp;&nbsp;</label>
               </div>
               <div class="entry">
-                <input type="number" min="1" name="employee-number" id="employee-number" class="entry-field" placeholder="Enter your employee number" required>
+                <input type="file" min="1" name="employee-number" id="employee-number" class="entry-field" placeholder="Enter your employee number" required>
               </div>
             </div>
             <div class="form-item">
               <div class="label">
-                <label id="number-label" for="age">Age:</label>
-              </div>
-              <div class="entry">
-                <input type="number" name="age" id="number" class="entry-field" placeholder="How old are You?" min="1" max="100" required>
-              </div>
-            </div>
-            <div class="form-item">
-              <div class="label">
-                <label id="gender-label" for="gender">Gender:</label>
-              </div>
-              <div class="entry">
-                <div id="gender">
-                  <label>
-                  <input type="radio" name="gender-radio" class="gender" value="Male">Male
-                </label>
-                  <label>
-                  <input type="radio" name="gender-radio" class="gender" value="Female">Female
-                </label>
-                  <label>
-                 <input type="radio" name="gender-radio" class="gender" value="Other">Other 
-                </label>
-                </div>
-              </div>
-            </div>
-            <div class="form-item">
-              <div class="label">
-                <label id="joining-date-label" for="joining-date">Joining Date:</label>
-              </div>
-              <div class="entry">
-                <input autofocus type="date" id="joining-date" class="entry-field" name="joining-date" placeholder="Enter your joining date" required>
-              </div>
-            </div>
-            <div class="form-item">
-              <div class="label">
-                <label id="email-label" for="email">Email:</label>
+                <label id="email-label" for="email">Email:&nbsp;&nbsp;&nbsp;</label>
               </div>
               <div class="entry">
                 <input type="email" name="email" id="email" class="entry-field" placeholder="Enter your email" required>
               </div>
             </div>
           </div>
-      
-       
-          <button id="submit" type="submit">Submit</button>
-        </form>
-        <footer>
-          <p>Made By <a>Kadir</a></p>
-        </footer>
       </main>
       <script type="text/javascript" src="index.js"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
