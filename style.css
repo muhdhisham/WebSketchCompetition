@@ -18,26 +18,35 @@
   
   .form-section{
     padding: 30px 15px 30px 15px;
-    background-color: #feada6 ;
+    background-color: #88bdbc ;
     /* background: linear-gradient( #da4453 , #89216B); */
     /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 10px 10px rgba(0,0,0,0.23); */
-    box-shadow: -10px -10px black;
+    /* box-shadow: -10px -10px black; */
     margin-bottom: 30px;
-    transition: box-shadow .4s;
-    border-radius: 14px;
-  }
-
-  .form-section:hover{
-    box-shadow: 0 0;
+    /* transition: box-shadow .4s; */
+    border-radius: 4px;
   }
 
   h2{
     text-align: center;
     margin: auto;
     width: 80%;
-    border-bottom: 2px dotted black;
+    /* border-bottom: 2px dotted black; */
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 0.5; /* Firefox */
   }
   
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+    
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+    
+  }
   .form-item{
     display: flex;
     align-items: flex-start;
@@ -70,41 +79,73 @@
     padding-left: 5px;
   }
   
-  input[type=text], input[type=email], 
-  input[type=number], #dropdown, textarea, #joining-date #employee-number{
-    border: none;
+  input[type=text], input[type=email],input[type=number], #dropdown, #joining-date{
+    background-color: rgb(62, 122, 165);
     border: 2px solid rgba(49, 31, 31, 0.3);
     /* border-top: 2px solid black; */
     height: 40px;
     width: 220px;
-    /* background-color: rgb(255, 163, 102); */
-    /* background: linear-gradient( #da4453 , #89216B); */
-    background-color: #feada6 ;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
     border-radius: 0;
     padding-left: 10px;
 
 
   }
-
-  input[type=text]:focus, input[type=email]:focus, 
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+  #employee-number {
+    height: 40px;
+    border: 2px solid rgba(163, 30, 30, 0.3);
+    background-color: rgb(62, 122, 165);
+    width: 222px;
+    border-radius: 0;
+  }
+#dropdown {
+  color: black;
+}
+  /* input[type=text]:focus, input[type=email]:focus, 
   input[type=number]:focus, #dropdown:focus, textarea:focus, #joining-date:focus{
     outline-width: 0;
-    border-radius: 20px;
-    background-color: black;
-    color: wheat;
+    /* border-radius: 20px; */
+    /* background-color: black; */
+    /* color: black;
     transition: all 0.2s;
-    border: 2px solid rgb(49, 245, 0);
-  }
+    box-shadow: 0; */
+    /* border: 2px solid rgb(49, 245, 0); */
+
+  /* } */ */
   input[type=text]:hover, input[type=email]:hover, 
   input[type=number]:hover, #dropdown:hover, textarea:hover, #joining-date:hover{
     transform: scale(1.1);
     transition: all .2s;
   }
+
+  input {
+    border:none;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow:5px 5px black;
+    -moz-box-shadow: 5px 5px black;
+    box-shadow:5px 5px #254e58;
+    height:25px;
+    line-height:25px;
+    width:200px;
+    text-indent:5px;
+ }
+
+ input:focus{
+  box-shadow: none;
+  transition: box-shadow 0.4s;
+
+ }
   
-  input[type=text], input[type=email], 
+  /* input[type=text], input[type=email], 
   input[type=number], #dropdown, textarea, #joining-date:required {
-    box-shadow:none;
-}
+    /* box-shadow:none; */
+  /* } */ */
   .entry label{
     display: block;
     margin-top: 2px;
@@ -117,14 +158,20 @@
     background: #ffe6e6;
     color: black;
     border: 2px solid black;
+    box-shadow:5px 5px #254e58;
+
   }
-  
+  option{
+    font-family: 'Quicksand', sans-serif;
+    
+  }
   #submit:hover{
-    background: rgb(255, 163, 102);
+    background: #254e58;
     color: white;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
     cursor: pointer;
     border: none;
+    transition: all 0.4s;
   }
   
   footer{

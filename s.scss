@@ -6,7 +6,7 @@
     z-index: -1;
     height: 44vh;
     width: 20%;
-    background-image: linear-gradient(blue,green);
+    background-image: linear-gradient(#17252a,#2b7a78);
     clip-path: polygon(0 0, 100% 0, 100% 83%, 22% 100%);
     overflow-y: hidden;
     -ms-overflow-style: none;scrollbar-width: none;
@@ -24,7 +24,7 @@
     @media (max-width: 1100px) {
         position: absolute;
         height: 10vh;
-        width: 100%;
+        width: 0%;
         top: auto;
         bottom: 0;
         clip-path: polygon(0 39%, 100% 0, 100% 100%, 0 100%);
