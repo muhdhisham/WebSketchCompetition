@@ -10,16 +10,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color: aqua;">
+<body style="background-color: #254e58;">
     <main id="main">
-        <h1 style="margin-top: 20px;" id="title">Carriers</h1>
-        <p id="description">Oppurtunity awaits you here... </p>
+        <h1 style="margin-top: 20px; color: #eee2dc;" id="title">Careers</h1>
+        <p id="description" style="color: #eee2dc; font-size: 25px;" >Oppurtunity awaits you here... </p>
         <form id="survey-form">
           <div class="form-section" id="General-info">
             <h2>General Information</h2>
             <div class="form-item">
               <div class="label">
-                <label id="name-label" for="name">Name:&nbsp;&nbsp;&nbsp;</label>
+                <label id="name-label" for="name">Fullname:&nbsp;&nbsp;&nbsp;</label>
               </div>
               <div class="entry">
                 <input type="text" id="name" class="entry-field" name="name" placeholder="Enter your name" required>
@@ -27,34 +27,16 @@
             </div>
             <div class="form-item">
               <div class="label">
-                <label id="designation-label" for="designation">Designation:&nbsp;&nbsp;&nbsp;</label>
-              </div>
-              <div class="entry">
-                <input type="text" id="designation" class="entry-field" name="designation" placeholder="Enter Your Position" required>
-              </div>
-            </div>
-            <div class="form-item">
-              <div class="label">
-                <label for="department">Department:&nbsp;&nbsp;&nbsp;</label>
+                <label for="department">Position applying for:&nbsp;&nbsp;&nbsp;</label>
               </div>
               <div class="entry">
                 <select id="dropdown" name="department">
-                <option disabled value>Select your department</option>
-                <option value="finance">Accounts</option>
-                <option value="Human-Resources">HR</option>
-                <option Value="Design">Design & Proposals</option>
-                <option value="Commercial">Procurement</option>
-                <option value="Civil">Civil</option>
-                <option value="Mechanical">Mechanical</option>
+                  <option selected style="color: darkblue;"" selected-value>Select Position</option>
+                <option value="UI/UX Designer">UI/UX Designer</option>
+                <option value="Webdeveloper">Webdeveloper</option>
+                <option Value="App Developer">App Developer</option>
+                <option value="Buissiness Admin">Buissiness Admin</option>
               </select>
-              </div>
-            </div>
-            <div class="form-item">
-              <div class="label">
-                <label id="epnumber-label" for="employee-number">Employee Number:&nbsp;&nbsp;&nbsp;</label>
-              </div>
-              <div class="entry">
-                <input type="file" min="1" name="employee-number" id="employee-number" class="entry-field" placeholder="Enter your employee number" required>
               </div>
             </div>
             <div class="form-item">
@@ -65,6 +47,25 @@
                 <input type="email" name="email" id="email" class="entry-field" placeholder="Enter your email" required>
               </div>
             </div>
+            <div class="form-item">
+              <div class="label">
+                <label id="designation-label" for="designation">Contact Number:&nbsp;&nbsp;&nbsp;</label>
+              </div>
+              <div class="entry">
+                <input type="number" id="designation" class="entry-field" name="designation" placeholder="Your Contact number" required>
+              </div>
+            </div>
+            
+            <div class="form-item">
+              <div class="label">
+                <label id="epnumber-label" for="employee-number">Your CV:&nbsp;&nbsp;&nbsp;</label>
+              </div>
+              <div class="entry">
+                <input type="file" name="employee-number" id="employee-number">
+              </div>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
           </div>
       </main>
       <script type="text/javascript" src="index.js"></script>
