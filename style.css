@@ -225,10 +225,6 @@ input[type=number]::-webkit-outer-spin-button {
       margin-left: 0;
     }
     
-    .label{
-      
-    }
-    
     .entry{
       width: 100%;
       padding: 0;
@@ -238,6 +234,7 @@ input[type=number]::-webkit-outer-spin-button {
     input[type=text], input[type=email], 
     input[type=number], #dropdown, textarea, #joining-date{
       width: 90%;
+      height: 50px;
     }
     
   }
