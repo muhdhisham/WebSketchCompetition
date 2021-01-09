@@ -114,6 +114,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
   #cv-number {
+    width: 200px;
     padding-left: 10px;
     height: 40px;
     border: 2px solid rgba(163, 30, 30, 0.3);
