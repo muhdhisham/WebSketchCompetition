@@ -95,7 +95,6 @@
   input[type=text], input[type=email],input[type=number], #dropdown, #joining-date{
     background-color: rgb(62, 122, 165);
     border: 2px solid rgba(49, 31, 31, 0.3);
-    /* border-top: 2px solid black; */
     height: 40px;
     width: 220px;
     color:var(--font-color);
@@ -115,6 +114,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
   #cv-number {
+    padding-left: 10px;
     height: 40px;
     border: 2px solid rgba(163, 30, 30, 0.3);
     background-color: rgb(62, 122, 165);
@@ -125,6 +125,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 #dropdown {
   color: var(--font-color);
+  box-shadow:5px 5px var(--box-shadow-color);
 }
 
 
@@ -148,7 +149,10 @@ input[type=number]::-webkit-outer-spin-button {
   transition: box-shadow 0.4s;
 
  }
-  
+  #dropdown:focus{
+    box-shadow: none;
+    transition: box-shadow 0.4s;
+  }
 
   .entry label{
     display: block;
