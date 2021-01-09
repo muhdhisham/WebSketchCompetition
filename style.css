@@ -1,3 +1,11 @@
+:root {
+  --form-section-gradient-1: #6782B4;
+  --form-section-gradient-2: #B1BFD8;
+  --font-fam: 'Quicksand', sans-serif;
+  --font-color: black;
+  --box-shadow-color: #254e58;
+}
+
 *{
     box-sizing: border-box;
   } 
@@ -6,7 +14,7 @@
     min-width: 250px;
     text-align: center;
     margin: auto;
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-fam);
   }
   
   form{
@@ -23,8 +31,7 @@
   }
   .form-section{
     padding: 15px 7.5px 15px 7.5px;
-    /* /* background-color: #88bdbc ;  */
-    background-image: linear-gradient(#6782B4,#B1BFD8);
+    background-image: linear-gradient(var(--form-section-gradient-1),var(--form-section-gradient-2));
     opacity: 0.7;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -37,17 +44,17 @@
     /* border-bottom: 2px dotted black; */
   }
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: black;
+    color: var(--font-color);
     opacity: 0.5; /* Firefox */
   }
   
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: black;
+    color: var(--font-color);
     
   }
   
   ::-ms-input-placeholder { /* Microsoft Edge */
-    color: black;
+    color: var(--font-color);
     
   }
   .form-item{
@@ -91,7 +98,7 @@
     /* border-top: 2px solid black; */
     height: 40px;
     width: 220px;
-    color: rgb(0, 0, 0);
+    color:var(--font-color);
     font-weight: 900;
     border-radius: 0;
     padding-left: 10px;
@@ -101,7 +108,13 @@
   input[type=number] {
     -moz-appearance: textfield;
   }
-  #employee-number {
+
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+  #cv-number {
     height: 40px;
     border: 2px solid rgba(163, 30, 30, 0.3);
     background-color: rgb(62, 122, 165);
@@ -111,24 +124,10 @@
 
   }
 #dropdown {
-  color: black;
+  color: var(--font-color);
 }
-  /* input[type=text]:focus, input[type=email]:focus, 
-  input[type=number]:focus, #dropdown:focus, textarea:focus, #joining-date:focus{
-    outline-width: 0;
-    /* border-radius: 20px; */
-    /* background-color: black; */
-    /* color: black;
-    transition: all 0.2s;
-    box-shadow: 0; */
-    /* border: 2px solid rgb(49, 245, 0); */
 
-  /* } */ */
-  input[type=text]:hover, input[type=email]:hover, 
-  input[type=number]:hover, #dropdown:hover, textarea:hover, #joining-date:hover{
-    transform: scale(1.1);
-    transition: all .2s;
-  }
+
 
   input {
     border:none;
@@ -137,7 +136,7 @@
     border-radius:5px;
     -webkit-box-shadow:5px 5px black;
     -moz-box-shadow: 5px 5px black;
-    box-shadow:5px 5px #254e58;
+    box-shadow:5px 5px var(--box-shadow-color);
     height:25px;
     line-height:25px;
     width:200px;
@@ -150,10 +149,7 @@
 
  }
   
-  /* input[type=text], input[type=email], 
-  input[type=number], #dropdown, textarea, #joining-date:required {
-    /* box-shadow:none; */
-  /* } */ */
+
   .entry label{
     display: block;
     margin-top: 2px;
@@ -164,20 +160,20 @@
     height: 40px;
     font-size: 18px;
     background: #ffe6e6;
-    color: black;
+    color: var(--font-color);
     border: 2px solid black;
-    box-shadow:5px 5px #254e58;
+    box-shadow:5px 5px var(--box-shadow-color);
 
   }
   
   option{
-    font-family: 'Quicksand', sans-serif;
+    font-family: var(--font-fam);
     
   }
   #submit:hover{
     background: #254e58;
     color: white;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 10px 10px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px var(--box-shadow-color), 0 10px 10px var(--box-shadow-color);
     cursor: pointer;
     border: none;
     transition: all 0.4s;
