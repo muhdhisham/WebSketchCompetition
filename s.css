@@ -6,8 +6,8 @@
   z-index: -1;
   height: 44vh;
   width: 20%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#0D324D), to(#7F5A83));
-  background-image: linear-gradient(#0D324D, #7F5A83);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#410407), to(#bd8c9f));
+  background-image: linear-gradient(#410407, #bd8c9f);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 22% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 83%, 22% 100%);
   overflow-y: hidden;
